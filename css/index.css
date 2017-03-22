@@ -1,0 +1,761 @@
+/*包裹体*/
+
+.wrap {
+    width: 1000px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+
+/*头部部分*/
+
+.header {
+    height: 152px;
+    width: 100%;
+}
+
+
+/*最顶部*/
+
+.header__top {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    background: #f7f7f7;
+    background-size: cover;
+    color: #666;
+}
+
+.header__top__leftArea {
+    float: left;
+    padding-left: 20px;
+    background: url(../img/icon/top-icon.png) left center no-repeat;
+    font-weight: bold;
+}
+
+.header__top__rightArea {
+    float: right;
+    margin-right: 20px;
+}
+
+.header__top__rightArea a {
+    color: #666;
+}
+
+.header__top__rightArea a:hover {
+    color: #f00;
+}
+
+
+/*中间搜索栏*/
+
+.header__mid {
+    height: 85px;
+    width: 100%;
+    line-height: 85px;
+    background: #1d7ad9;
+    background: cover;
+}
+
+.header__mid__logo {
+    width: 112px;
+    height: 59px;
+    float: left;
+    background: url(../img/logo.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    margin-top: -29px;
+}
+
+.header__mid__search {
+    width: 430px;
+    height: 35px;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 340px;
+    margin-top: -17px;
+}
+
+.header__mid__search-text {
+    width: 350px;
+    height: 100%;
+    float: left;
+    border: none;
+    padding: 0 5px;
+}
+
+.header__mid__search-button {
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    border: none;
+    color: white;
+    background: #ff8c00;
+    font-size: 14px;
+}
+
+.header__mid__shoppingCar {
+    width: 145px;
+    height: 35px;
+    line-height: 35px;
+    background: #ff8800;
+    float: left;
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    margin-top: -17px;
+}
+
+.header__mid__shoppingCar span {
+    font-size: 14px;
+    color: white;
+    position: relative;
+    padding-left: 40px;
+}
+
+.header__mid__shoppingCar span::before {
+    content: "";
+    width: 23px;
+    height: 20px;
+    position: absolute;
+    background: url(../img/icon/car-icon.png) no-repeat;
+    top: 50%;
+    left: 10px;
+    margin-top: -10px;
+}
+
+.header__mid__shoppingCar span::after {
+    content: "";
+    height: 35px;
+    width: 1px;
+    background: #e27a00;
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    margin-top: -18px;
+}
+
+.header__mid__shoppingCar b {
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    left: 110px;
+}
+
+.header__mid__shoppingCar b::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: url(../img/icon/car-arrow.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    margin-top: -6px;
+}
+
+
+/*底部导航*/
+
+.header__bottom {
+    height: 35px;
+    background: #1369c0;
+    background-size: cover;
+}
+
+.header__bottom__class {
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 40px;
+    float: left;
+    background: url(../img/icon/class-arrow.png) 80% center no-repeat;
+}
+
+.header__bottom__class a {
+    font-size: 16px;
+    color: white;
+}
+
+.header__bottom__nav {
+    width: 570px;
+    height: 100%;
+    line-height: 35px;
+    float: left;
+}
+
+.header__bottom__nav-item {
+    font-size: 14px;
+    color: white;
+    width: 95px;
+    height: 35px;
+    float: left;
+    text-align: center;
+}
+
+.header__bottom__nav-item_status_active {
+    background: #4593fd;
+}
+
+
+/*菜单部分*/
+
+.menu {
+    width: 190px;
+    height: 324px;
+    background: #4593fd;
+    float: left;
+    border-left: 1px solid #4593fd;
+    border-bottom: 1px solid #4593fd;
+}
+
+.menu__item {
+    width: 100%;
+    height: 34px;
+    text-indent: 10px;
+    padding: 15px 0;
+    color: white;
+    border-bottom: 1px solid #3487f2;
+}
+
+.menu__item dt {
+    background: url(../img/icon/menu-arrow.png) 90% no-repeat;
+}
+
+.menu__item dt a {
+    font-size: 14px;
+    padding: 0 2px;
+    color: white;
+}
+
+.menu__item dd a {
+    color: #c2d9f8;
+}
+
+.menu__item a:hover {
+    text-decoration: underline;
+    background: #1369c0;
+    border-radius: 10px;
+    color: white;
+}
+
+.menu__item:last-of-type {
+    border-bottom: none;
+}
+
+.menu__item_status_active {
+    background: white;
+}
+
+.menu__item_status_active>dl a {
+    color: black;
+}
+
+
+/*菜单右侧列表部分*/
+
+.list {
+    float: left;
+    width: 570px;
+    height: 380px;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+.list dt,
+.list dd {
+    float: left;
+}
+
+.list dt a {
+    color: #4b88da;
+    font-weight: bold;
+}
+
+.list dd a {
+    margin-left: 15px;
+    float: left;
+}
+
+.list dd a:hover {
+    color: #ff7300;
+    float: left;
+}
+
+.list__menu {
+    width: 530px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.list__menu-1,
+.list__menu-5,
+.list__menu-6 {
+    height: 40px;
+    line-height: 40px;
+}
+
+.list__menu-2,
+.list__menu-3,
+.list__menu-4 {
+    height: 33px;
+    padding: 17px 0;
+}
+
+.list__button-1,
+.list__button-2 {
+    float: left;
+    width: 105px;
+    height: 26px;
+    line-height: 26px;
+    color: white;
+    margin-top: 15px;
+    text-indent: 7px;
+    background: url(../img/icon/menu-arrow.png) 90% no-repeat;
+    background-color: #2785e6;
+}
+
+.list__button-1 {
+    margin-left: 20px;
+}
+
+.list__button-2 {
+    margin-left: 10px;
+}
+
+.banner {
+    width: 811px;
+    height: 326px;
+    background: url(../img/bg-watch.png) no-repeat;
+    margin-left: 190px;
+}
+
+
+/*家用电脑部分*/
+
+.section-1 {
+    width: 980px;
+    height: 45px;
+    margin-top: 15px;
+    clear: both;
+    position: relative;
+}
+
+.section-1__title {
+    float: left;
+    font-size: 24px;
+    text-indent: 60px;
+    line-height: 45px;
+    background: url(../img/icon/title-icon.png) no-repeat;
+}
+
+.section-1__more {
+    float: right;
+    position: absolute;
+    color: black;
+    right: 0;
+    bottom: 0;
+}
+
+.section-1__more:hover {
+    color: red;
+}
+
+
+/*家用电脑详细清单*/
+
+.computer {
+    width: 1000px;
+    height: 400px;
+    margin-top: 15px;
+}
+
+
+/*左侧广告背景*/
+
+.computer__ad-bg {
+    height: 100%;
+    width: 190px;
+    float: left;
+    background: url(../img/computer-bg.png) no-repeat;
+}
+
+
+/*右侧详细条目*/
+
+.computer__item {
+    width: 810px;
+    height: 100%;
+    float: right;
+}
+
+
+/*顶部条目*/
+
+.computer__item-top {
+    width: 199px;
+    height: 279px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+
+.computer__item-bottom {
+    width: 199px;
+    height: 116px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 3px solid #ff7201;
+    float: left;
+}
+
+.computer__item-phone {
+    display: block;
+    width: 133px;
+    height: 212px;
+    position: relative;
+    background: url(../img/htc-phone.png) no-repeat center top;
+    margin: 34px auto;
+}
+
+.computer__item-phone h1 {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    left: 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.computer__item-phone h1:hover {
+    color: #ff7300;
+}
+
+.computer__item-phone h2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #ff7300;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+
+/*底部条目*/
+
+.computer__item-phone-1 {
+    display: block;
+    width: 180px;
+    height: 60px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.computer__item-phone-2,
+.computer__item-phone-3 {
+    display: block;
+    width: 142px;
+    height: 75px;
+    margin: 23px auto;
+    position: relative;
+}
+
+.computer__item-phone-3 {
+    width: 160px;
+}
+
+.computer__item-phone-4 {
+    display: block;
+    width: 185px;
+    height: 42px;
+    margin: 39px auto;
+    position: relative;
+}
+
+.computer__item-bottom h1 {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-weight: normal;
+    color: black;
+    text-align: left;
+    font-size: 12px;
+}
+
+.computer__item-bottom h1:hover {
+    color: #ff7300;
+}
+
+.computer__item-bottom h2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #363636;
+    font-size: 16px;
+}
+
+
+/*底部第一个打印机*/
+
+.computer__item-phone-1 {
+    background: url(../img/type-writer.png) no-repeat;
+}
+
+.computer__item-phone-1 h1 {
+    width: 97px;
+}
+
+.computer__item-phone-1 h2 {
+    width: 97px;
+}
+
+
+/*底部第二个三星*/
+
+.computer__item-phone-2 {
+    background: url(../img/samsung.png) no-repeat;
+}
+
+.computer__item-phone-2 h1 {
+    width: 97px;
+    top: 10px;
+    left: 50px;
+}
+
+.computer__item-phone-2 h2 {
+    width: 97px;
+    bottom: 10px;
+    left: 50px;
+}
+
+
+/*底部第三个平板*/
+
+.computer__item-phone-3 {
+    background: url(../img/ipad.png) no-repeat;
+}
+
+.computer__item-phone-3 h1 {
+    width: 97px;
+    top: 10px;
+    left: 70px;
+}
+
+.computer__item-phone-3 h2 {
+    width: 97px;
+    bottom: 10px;
+    left: 70px;
+}
+
+
+/*底部第四个电脑*/
+
+.computer__item-phone-4 {
+    background: url(../img/apple-macbook.png) no-repeat;
+}
+
+.computer__item-phone-4 h1 {
+    width: 110px;
+    top: -5px;
+    left: 80px;
+}
+
+.computer__item-phone-4 h2 {
+    width: 97px;
+    bottom: -5px;
+    left: 80px;
+}
+
+
+/*食品酒水部分*/
+
+.section-2 {
+    width: 980px;
+    height: 45px;
+    margin-top: 15px;
+    clear: both;
+    position: relative;
+}
+
+.section-2__title {
+    float: left;
+    font-size: 24px;
+    text-indent: 60px;
+    line-height: 45px;
+    background: url(../img/icon/title-icon.png) no-repeat;
+}
+
+.section-2__more {
+    float: right;
+    position: absolute;
+    color: black;
+    right: 0;
+    bottom: 0;
+}
+
+.section-2__more:hover {
+    color: red;
+}
+
+
+/*家用电脑详细清单*/
+
+.food {
+    width: 1000px;
+    height: 400px;
+    margin-top: 15px;
+}
+
+
+/*左侧广告背景*/
+
+.food__ad-bg {
+    height: 100%;
+    width: 190px;
+    float: left;
+    background: url(../img/food-bg.png) no-repeat;
+}
+
+
+/*右侧详细条目*/
+
+.food__item {
+    width: 810px;
+    height: 100%;
+    float: right;
+}
+
+
+/*顶部条目*/
+
+.food__item-top {
+    width: 199px;
+    height: 279px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+
+.food__item-bottom {
+    width: 199px;
+    height: 116px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 3px solid #ff7201;
+    float: left;
+}
+
+.food__item-snacks {
+    display: block;
+    width: 133px;
+    height: 212px;
+    position: relative;
+    background: url(../img/snacks.png) no-repeat center top;
+    margin: 34px auto;
+}
+
+.food__item-snacks h1 {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    left: 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.food__item-snacks h1:hover {
+    color: #ff7300;
+}
+
+.food__item-snacks h2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #ff7300;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+/*底部条目*/
+
+.food__item-medicine {
+    display: block;
+    width: 150px;
+    height: 80px;
+    margin: 20px auto;
+    position: relative;
+    background: url(../img/medicine.png) no-repeat;
+}
+
+.food__item-bottom h1 {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    font-weight: normal;
+    color: black;
+    text-align: left;
+    font-size: 12px;
+}
+
+.food__item-bottom h1:hover {
+    color: #ff7300;
+}
+
+.food__item-bottom h2 {
+    position: absolute;
+    left: 65px;
+    bottom: 10px;
+    color: #363636;
+    font-size: 16px;
+}
+
+
+/*footer部分*/
+
+.footer {
+    height: 223px;
+    width: 100%;
+    margin-top: 40px;
+    background: #d4d4d4;
+    background-size: cover;
+}
+
+.footer__intro {
+    width: 460px;
+    padding-top: 55px;
+    margin: 0 auto;
+}
+
+.footer__intro a {
+    color: black;
+}
+
+.footer__intro a:hover {
+    color: #ff7300;
+}
+
+.footer__copyright {
+    width: 713px;
+    padding-top: 12px;
+    margin: 0 auto;
+    color: black;
+}
+
+.footer__judge {
+    width: 585px;
+    height: 45px;
+    padding-top: 35px;
+    margin: 0 auto;
+    background: url(../img/judge.png) left bottom no-repeat, url(../img/judge.png) 33.3% bottom no-repeat, url(../img/judge.png) 66.6% bottom no-repeat, url(../img/judge.png) right bottom no-repeat;
+}
